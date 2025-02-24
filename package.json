@@ -4,7 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build:authentication": "ng build --project=authentication",
+    "build:admin": "ng build --project=admin",
+    "build:client": "ng build --project=client",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "authentication-start": "ng serve --project=\"authentication\" --port 4200",
