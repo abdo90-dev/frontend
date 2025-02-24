@@ -1,0 +1,22 @@
+{
+    "routes": [
+      { "src": "/client/(.*)", "dest": "/client/$1" },
+      { "src": "/admin/(.*)", "dest": "/admin/$1" },
+      { "src": "/auth/(.*)", "dest": "/auth/$1" }
+    ],
+    "builds": [
+      {
+        "src": "dist/client/**/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "dist/admin/**/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "dist/authentication/**/*",
+        "use": "@vercel/static"
+      }
+    ]
+  }
+  
