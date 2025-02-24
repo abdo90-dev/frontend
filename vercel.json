@@ -1,14 +1,14 @@
 {
   "version": 2,
+  "public": true,
   "builds": [
-    { "src": "dist/authentication/**", "use": "@vercel/static" },
-    { "src": "dist/admin/**", "use": "@vercel/static" },
-    { "src": "dist/client/**", "use": "@vercel/static" }
+    { "src": "dist/authentication/index.html", "use": "@vercel/static" },
+    { "src": "dist/client/index.html", "use": "@vercel/static" },
+    { "src": "dist/admin/index.html", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/client/(.*)", "dest": "/client/index.html" },
     { "src": "/admin/(.*)", "dest": "/admin/index.html" },
     { "src": "/(.*)", "dest": "/authentication/index.html" }
-]
+  ]
 }
-  
