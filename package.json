@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "build": "npm run build:authentication && npm run build:admin && npm run build:client",
     "build:authentication": "ng build --project=authentication --configuration production",
     "build:admin": "ng build --project=admin --configuration production",
     "build:client": "ng build --project=client --configuration production",
