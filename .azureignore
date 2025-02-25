@@ -1,0 +1,7 @@
+node_modules/
+.angular/
+.angular/cache/
+dist/
+dist-ssr/
+logs/
+*.log
