@@ -4,7 +4,7 @@
   "scripts": {
     "postinstall": "npm install -g @angular/cli",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve authentication --host 0.0.0.0 --port 10000",
     "build": "npm run build:authentication && npm run build:admin && npm run build:client",
     "build:authentication": "ng build --project=authentication --configuration production",
     "build:admin": "ng build --project=admin --configuration production",
