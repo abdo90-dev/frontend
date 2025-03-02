@@ -4,7 +4,10 @@
   "scripts": {
     "postinstall": "npm install -g @angular/cli",
     "ng": "ng",
-    "start": "npx http-server dist/authentication -p 10000",
+    "start": "npm-run-all --parallel serve-authentication serve-client serve-admin",
+    "serve-authentication": "npx http-server dist/authentication -p 10000",
+    "serve-client": "npx http-server dist/client -p 10001",
+    "serve-admin": "npx http-server dist/admin -p 10002",
     "build": "npm run build:authentication && npm run build:admin && npm run build:client",
     "build:authentication": "ng build --project=authentication --configuration production",
     "build:admin": "ng build --project=admin --configuration production",

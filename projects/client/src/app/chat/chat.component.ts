@@ -1,8 +1,7 @@
-import { ChangeDetectorRef, Component, ComponentFactoryResolver, ComponentRef, ElementRef, Input, OnDestroy, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, ElementRef, Input, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { ChatMessage } from 'projects/admin/src/app/models/message';
 import { UserService } from 'projects/admin/src/app/user.service';
-import { LoginService } from 'projects/authentication/login.service';
 import { SignUpForm } from 'projects/authentication/signUpForm';
 import { ChatService } from 'projects/client/chat.service';
 import { ServicesService } from 'projects/client/services.service';
